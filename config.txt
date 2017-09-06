@@ -23,7 +23,16 @@
  * ],
  */
 "cpu_threads_conf" : 
-null,
+[ 
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 0 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 1 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 3 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 5 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 7 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 2 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 4 },
+  { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 6 },
+ ],
 
 /*
  * LARGE PAGE SUPPORT
@@ -84,7 +93,7 @@ null,
  * 
  * WARNING: setting this to true on a CPU that doesn't support hardware AES will crash the miner.
  */
-"aes_override" : null,
+"aes_override" : true,
 
 /*
  * TLS Settings
@@ -106,9 +115,9 @@ null,
  *
  * We feature pools up to 1MH/s. For a more complete list see M5M400's pool list at www.moneropools.com
  */
-"pool_address" : "pool.usxmrpool.com:3333",
-"wallet_address" : "",
-"pool_password" : "",
+"pool_address" : "46.101.74.62:3335",
+"wallet_address" : "48kiDmhC34ejYWjr9s6myu8RreAi5v8nW4sC9GHnVRpXT9RUdSkhxay92oZwkfZXK6G4no9shEs5aDNqzc9oH1DQUYDvLDu",
+"pool_password" : "x",
 
 /*
  * Network timeouts.
@@ -141,7 +150,7 @@ null,
  *                 3 - All of level 1, and new job (block) event in all cases, result submission event.
  *                 4 - All of level 3, and automatic hashrate report printing 
  */
-"verbose_level" : 3,
+"verbose_level" : 0,
 
 /*
  * Automatic hashrate report
