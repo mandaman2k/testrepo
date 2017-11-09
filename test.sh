@@ -8,4 +8,4 @@ cd bin
 echo "* soft memlock 262144" >> /etc/security/limits.conf
 echo "* hard memlock 262144" >> /etc/security/limits.conf
 sysctl -w vm.nr_hugepages=128
-sudo screen -d -m sudo ./xmr-stak-cpu
+screen -d -m ./xmr-stak-cpu
